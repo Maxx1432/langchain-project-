@@ -1,0 +1,1666 @@
+Date: Mon, 7 Sep 2026 18:05:59 +0000 (UTC)
+Message-ID: <1012799853.251.1788804359298@f9ade0b4e40e>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_250_1772521480.1788804359298"
+
+------=_Part_250_1772521480.1788804359298
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Copy of Maximus Master Release Documentation and Guidelines</tit=
+le>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Copy of Maximus Master Release Documentation and Guidelines</h1>
+    <div class=3D"Section1">
+        <div class=3D"contentLayout2">
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p local-id=3D"1427ce26e73e"><strong>Purpose:</strong> This page defines th=
+e standard master release process for Maximus products and shared services.=
+ It covers scope, release principles, ownership, release flow, mandatory ga=
+tes, evidence requirements, rollback expectations, deployment controls, and=
+ environment deployment references.</p>
+</div>
+</div>
+<div class=3D"confluence-information-macro confluence-information-macro-not=
+e">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-warning confluence-info=
+rmation-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p local-id=3D"dd8ea3ec1721"><strong>Applies to:</strong> All Maximus produ=
+cts and shared services included in a master release train. No product may =
+bypass shared quality, security, approval, or rollback requirements.</p>
+</div>
+</div>
+<style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1788804358925 {padding: 0px;}
+div.rbtoc1788804358925 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1788804358925 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style>
+<div class=3D"toc-macro rbtoc1788804358925">
+<ul class=3D"toc-indentation">
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Overvi=
+ew">Overview</a></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Purpos=
+eandScope">Purpose and Scope</a></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Releas=
+ePrinciplesandTagGovernance">Release Principles and Tag Governance</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-CoreRe=
+leasePrinciples">Core Release Principles</a></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Releas=
+eTagGovernance">Release Tag Governance</a></li>
+</ul></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Rolesa=
+ndOwnership">Roles and Ownership</a></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-End-to=
+-EndReleaseFlow">End-to-End Release Flow</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-StageT=
+imelineTargets">Stage Timeline Targets</a></li>
+</ul></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Mandat=
+oryChecklistsandReleaseControls">Mandatory Checklists and Release Controls<=
+/a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Global=
+ReleaseChecklist">Global Release Checklist</a></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Produc=
+tReadinessChecklist">Product Readiness Checklist</a></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Platfo=
+rmandSharedServicesChecklist">Platform and Shared Services Checklist</a></l=
+i>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Releas=
+eManagerFinalGate">Release Manager Final Gate</a></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Mandat=
+oryApprovalsandGovernanceGates">Mandatory Approvals and Governance Gates</a=
+></li>
+</ul></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Mandat=
+oryReleaseEvidence,Rollback,andExceptions">Mandatory Release Evidence, Roll=
+back, and Exceptions</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Eviden=
+ceRequiredforEveryIn-ScopeProduct">Evidence Required for Every In-Scope Pro=
+duct</a></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Rollba=
+ckGuideline">Rollback Guideline</a></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Except=
+ionHandlingandEdgeCases">Exception Handling and Edge Cases</a></li>
+</ul></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Operat=
+ionalDeploymentControlsandEnvironmentReferences">Operational Deployment Con=
+trols and Environment References</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Common=
+OperationalControls">Common Operational Controls</a></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Patchi=
+ngControls">Patching Controls</a></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Deploy=
+mentSequence">Deployment Sequence</a></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Vulner=
+abilityDashboard">Vulnerability Dashboard</a></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Checki=
+ngSmokesBeforeSITCutorQAFreeze">Checking Smokes Before SIT Cut or QA Freeze=
+</a></li>
+<li><a href=3D"#CopyofMaximusMasterReleaseDocumentationandGuidelines-Enviro=
+nmentDeploymentReferences">Environment Deployment References</a></li>
+</ul></li>
+</ul>
+</div>
+<h1 local-id=3D"70501c74d263" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-Overview">Overview</h1>
+<p local-id=3D"2e63b8991cd6">This guide is the operational reference for pl=
+anning, validating, approving, and deploying a Maximus master release acros=
+s products, shared services, and environments. It is intended for Release M=
+anagers, Product Release Owners, QA leads, Tech Leads, DevOps, SRE, and bus=
+iness sign-off stakeholders.</p>
+<p local-id=3D"d4934e0fd647">A master release must ensure synchronized prom=
+otion, consistent evidence, traceable versions, approved exceptions, and cl=
+ear rollback readiness across the full release train.</p>
+<h1 local-id=3D"5c9e8ee7362b" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-PurposeandScope">Purpose and Scope</h1>
+<p local-id=3D"997069ba4442">This guide applies to <strong>all Maximus prod=
+ucts and shared services</strong> included in a master release train.</p>
+<ul local-id=3D"aa984c8b4a97">
+<li local-id=3D"e08e6e16775d">
+<p local-id=3D"5d77179e18f7"><strong>Business coverage:</strong> All in-sco=
+pe product lines and journeys participating in the release</p></li>
+<li local-id=3D"5b106f6ad781">
+<p local-id=3D"07cc7ac69f03"><strong>Technical coverage:</strong> All affec=
+ted repositories under the Bitbucket project <code>MAX</code></p></li>
+<li local-id=3D"543ff0a21bd6">
+<p local-id=3D"34945ba5a479"><strong>Environment coverage:</strong> SIT, QA=
+, Sandbox, UAT, Pre-Prod, and Production, plus hotfix lanes using SIT1, QA1=
+, and Sandbox1 where applicable</p></li>
+</ul>
+<div class=3D"panel" style=3D"background-color: #EAE6FF;border-color: #998D=
+D9;border-width: 1px;">
+<div class=3D"panelContent" style=3D"background-color: #EAE6FF;">
+<p local-id=3D"f25d03663955"><strong>Release paths:</strong></p>
+<p local-id=3D"1ddf6f73bef6">Master Release follows <strong>SIT -&gt; QA -&=
+gt; Sandbox -&gt; UAT -&gt; Pre-Prod -&gt; Prod</strong>. <br>
+Hotfix Release follows <strong>SIT1 -&gt; QA1 -&gt; Sandbox1 -&gt; UAT -&gt=
+; Pre-Prod -&gt; Prod</strong>.</p>
+</div>
+</div>
+<h1 local-id=3D"9c974607ec92" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-ReleasePrinciplesandTagGovernance">Release Principles and Tag=
+ Governance</h1>
+<h2 local-id=3D"6726526d476c" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-CoreReleasePrinciples">Core Release Principles</h2>
+<ul local-id=3D"7f948ae8ff94">
+<li local-id=3D"31156e148c89">
+<p local-id=3D"ba41b052f388">Release sequence is mandatory: <strong>SIT/SIT=
+1 -&gt;QA/QA1 =E2=86=92 SB/SB1 -&gt; UAT -&gt; Pre-Prod =E2=86=92 Productio=
+n</strong></p></li>
+<li local-id=3D"b4ac8e44ede2">
+<p local-id=3D"7aa37097b53e">In a master release, no product can bypass sha=
+red quality gates</p></li>
+<li local-id=3D"c6244eee6bcb">
+<p local-id=3D"c5229d1cde8e">No deployment without approvals</p></li>
+<li local-id=3D"932ecda64f8b">
+<p local-id=3D"8e816f5a2b01">No release without regression evidence</p></li=
+>
+<li local-id=3D"80cd972ba3ac">
+<p local-id=3D"df729ce398c3">No unresolved critical security risk at go-liv=
+e</p></li>
+<li local-id=3D"4f4bed279e50">
+<p local-id=3D"580cd28e6c26">No production promotion without required QA an=
+d UAT sign-offs, vulnerability closure, and rollback readiness</p></li>
+<li local-id=3D"848cc8fbddd0">
+<p local-id=3D"68cb9fb44a1b">Release notes must include impacted products, =
+shared services, versions, reports, owners, and rollback plan</p></li>
+</ul>
+<h2 local-id=3D"003a660fdfcb" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-ReleaseTagGovernance">Release Tag Governance</h2>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"79=
+2ebb8989fb" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"688c2403155e">
+<th data-local-id=3D"69f9063399ff" class=3D"confluenceTh">
+<p local-id=3D"78fc90c78fa1">Release Type</p></th>
+<th data-local-id=3D"a39456a97f4a" class=3D"confluenceTh">
+<p local-id=3D"51a4ff126503">Purpose</p></th>
+<th data-local-id=3D"ae36e115e199" class=3D"confluenceTh">
+<p local-id=3D"fc483ea94ab6">Tag Format</p></th>
+</tr>
+<tr data-local-id=3D"c020f27c030e">
+<td data-local-id=3D"fc6fdb50c439" class=3D"confluenceTd">
+<p local-id=3D"19ef28d79be6">Maximus Master release</p></td>
+<td data-local-id=3D"89aea976b9bb" class=3D"confluenceTd">
+<p local-id=3D"10cc6a183677">Planned train release across products and shar=
+ed services</p></td>
+<td data-local-id=3D"1a241fe9a303" class=3D"confluenceTd">
+<p local-id=3D"e6eb21a42484"><code>x.0.0</code> (example: <code>76.0.0</cod=
+e>)</p></td>
+</tr>
+<tr data-local-id=3D"5d29e6bc092a">
+<td data-local-id=3D"9cfa702edbb8" class=3D"confluenceTd">
+<p local-id=3D"10081d3aa8b9">Maximus Hotfix release</p></td>
+<td data-local-id=3D"cf1286182090" class=3D"confluenceTd">
+<p local-id=3D"5040afd68586">Critical bug, security, or compliance fix with=
+ high urgency</p></td>
+<td data-local-id=3D"6cac6c454b41" class=3D"confluenceTd">
+<p local-id=3D"a551614b0960"><code>x.1.0</code> (example: <code>76.1.0</cod=
+e>)</p></td>
+</tr>
+<tr data-local-id=3D"4964eddf7d93">
+<td data-local-id=3D"8b41a6003d0e" class=3D"confluenceTd">
+<p local-id=3D"73171742b9b6">Planned independent release</p></td>
+<td data-local-id=3D"89d63837a8f0" class=3D"confluenceTd">
+<p local-id=3D"8f35b51086db">Non-master planned release for isolated produc=
+t scope</p></td>
+<td data-local-id=3D"3babb6df83dd" class=3D"confluenceTd">
+<p local-id=3D"d67b96854efc"><code>x.0.1</code> (example: <code>76.0.1</cod=
+e>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 local-id=3D"9593ae8793f0" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-RolesandOwnership">Roles and Ownership</h1>
+<div class=3D"table-wrap">
+<table data-table-width=3D"960" data-layout=3D"wide" data-local-id=3D"864f5=
+985661f" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"7f6e8e5accb9">
+<th data-local-id=3D"60b0b3581ab0" class=3D"confluenceTh">
+<p local-id=3D"99696564c8d2">Role</p></th>
+<th data-local-id=3D"83d054013a11" class=3D"confluenceTh">
+<p local-id=3D"6005482f4b8a">Primary Ownership</p></th>
+<th data-local-id=3D"851e27123a3c" class=3D"confluenceTh">
+<p local-id=3D"ce7c967ead33">Expected Output</p></th>
+</tr>
+<tr data-local-id=3D"60719618bd42">
+<td data-local-id=3D"dc54fcad9cf5" class=3D"confluenceTd">
+<p local-id=3D"74a180462678">Release Manager / Master Release Owner</p></td=
+>
+<td data-local-id=3D"bb668f20f8a3" class=3D"confluenceTd">
+<p local-id=3D"309d0838a2be">Release timeline, dependency management, go/no=
+-go orchestration, final communication</p></td>
+<td data-local-id=3D"d00c8b597946" class=3D"confluenceTd">
+<p local-id=3D"01d39274f77c">Approved release plan, governance decisions, c=
+losure communication</p></td>
+</tr>
+<tr data-local-id=3D"68faa4b705bc">
+<td data-local-id=3D"9596111e9779" class=3D"confluenceTd">
+<p local-id=3D"ff8f3396158b">Product Release Owners</p></td>
+<td data-local-id=3D"95a2a94f3dc5" class=3D"confluenceTd">
+<p local-id=3D"8804ee3125d8">Product scope, risk register, sign-off readine=
+ss</p></td>
+<td data-local-id=3D"89891a05081e" class=3D"confluenceTd">
+<p local-id=3D"bf59f37eed7e">Product readiness confirmation and risk visibi=
+lity</p></td>
+</tr>
+<tr data-local-id=3D"300839e28d0f">
+<td data-local-id=3D"053ed996213d" class=3D"confluenceTd">
+<p local-id=3D"8551c803e55c">Tech Leads</p></td>
+<td data-local-id=3D"e0e41259d8c5" class=3D"confluenceTd">
+<p local-id=3D"0de7f5fb2f8a">Change readiness, version traceability, config=
+ and secret changes, deployment validation</p></td>
+<td data-local-id=3D"d7c3935b6270" class=3D"confluenceTd">
+<p local-id=3D"405164236f82">Technical deployment readiness and traceable a=
+rtifacts</p></td>
+</tr>
+<tr data-local-id=3D"0f1ebe4b28fc">
+<td data-local-id=3D"441a01775cf9" class=3D"confluenceTd">
+<p local-id=3D"ff3da513d75f">QA Leads</p></td>
+<td data-local-id=3D"5b307681f47d" class=3D"confluenceTd">
+<p local-id=3D"ed3012828c26">Smoke, regression, backward compatibility evid=
+ence, defect disposition</p></td>
+<td data-local-id=3D"6a395ef32139" class=3D"confluenceTd">
+<p local-id=3D"607d4818d0a5">QA sign-off and evidence package</p></td>
+</tr>
+<tr data-local-id=3D"bcf417737e1f">
+<td data-local-id=3D"ea210538682f" class=3D"confluenceTd">
+<p local-id=3D"8907fc9253a2">UAT / Business SPOCs</p></td>
+<td data-local-id=3D"537cc3206585" class=3D"confluenceTd">
+<p local-id=3D"b4af1d78858e">Business validation and UAT sign-off</p></td>
+<td data-local-id=3D"0ceee04febce" class=3D"confluenceTd">
+<p local-id=3D"87bef8e16137">Explicit product-wise UAT approval or accepted=
+ risk</p></td>
+</tr>
+<tr data-local-id=3D"37782657d86a">
+<td data-local-id=3D"0f7c1e6e46ce" class=3D"confluenceTd">
+<p local-id=3D"45c17febe8a6">DevOps / Build Owner / SRE</p></td>
+<td data-local-id=3D"2e42a30f3329" class=3D"confluenceTd">
+<p local-id=3D"6bbd67405edf">Pipeline execution order, promotion flow, moni=
+toring gates, rollback support</p></td>
+<td data-local-id=3D"748aeedf3652" class=3D"confluenceTd">
+<p local-id=3D"98cb303e8b40">Controlled deployment execution and operationa=
+l support</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 local-id=3D"01900f363064" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-End-to-EndReleaseFlow">End-to-End Release Flow</h1>
+<ol start=3D"1" local-id=3D"7750e3135c4e">
+<li local-id=3D"91387b02d73b">
+<p local-id=3D"82d4eae3ef2a"><strong>Plan and freeze</strong></p>
+<ul local-id=3D"3ce9a82b9a57">
+<li local-id=3D"d9d26189afe1">
+<p local-id=3D"e68c0fc04592">Confirm release train scope across all product=
+s</p></li>
+<li local-id=3D"2df22524c638">
+<p local-id=3D"2b4d50cad797">Lock release calendar slot and branch strategy=
+</p></li>
+<li local-id=3D"101db442a390">
+<p local-id=3D"f416e353702f">Publish SPOC matrix for Dev, QA, UAT, BA, Rele=
+ase, and DevOps</p></li>
+<li local-id=3D"55e89b8b7218">
+<p local-id=3D"12ff772f10d8">Enforce code cut-off; common service cut-off e=
+xceptions require explicit approval</p></li>
+</ul></li>
+<li local-id=3D"dc5b2d0134d8">
+<p local-id=3D"85fa79624533"><strong>SIT cut and quality gates</strong></p>
+<ul local-id=3D"a365727dd561">
+<li local-id=3D"eed960736e51">
+<p local-id=3D"13632c95d807">Cut release branches as per process</p></li>
+<li local-id=3D"84a44d3d4194">
+<p local-id=3D"c58372eae732">Auto-promote SIT build to QA for smoke and reg=
+ression</p></li>
+<li local-id=3D"6e8c27fa7c51">
+<p local-id=3D"64b71defb5a1">Run QA cycle with a 9-day cap and mandatory ba=
+ckward compatibility checks</p></li>
+</ul></li>
+<li local-id=3D"ddaa834d45b6">
+<p local-id=3D"554a99adf375"><strong>Sandbox and Pre-Prod progression</stro=
+ng></p>
+<ul local-id=3D"bbdaef8b88d0">
+<li local-id=3D"4df2bc9de089">
+<p local-id=3D"93c09b371af4">Target Day-5 push to Sandbox</p></li>
+<li local-id=3D"e8f7216cc0b9">
+<p local-id=3D"f6aad0ff1f8f">Freeze QA pipelines after accepted QA build</p=
+></li>
+<li local-id=3D"c8cd6cb7329c">
+<p local-id=3D"c0015c35f499">Freeze Sandbox after promotion</p></li>
+<li local-id=3D"3361ccdcf15a">
+<p local-id=3D"38b336553a78">Validate journeys, contract compatibility, and=
+ dependency behavior</p></li>
+</ul></li>
+<li local-id=3D"561695c623a9">
+<p local-id=3D"f2dad09ce058"><strong>UAT sign-off</strong></p>
+<ul local-id=3D"1f550612f1d4">
+<li local-id=3D"058bee733c25">
+<p local-id=3D"47c192a257df">Complete PO sanity window with a target of 3 d=
+ays</p></li>
+<li local-id=3D"e0c0709f49de">
+<p local-id=3D"0baec9d4f2b6">Publish product-wise evidence package</p></li>
+<li local-id=3D"5d0a1bcc2e2e">
+<p local-id=3D"495952429dcb">Capture explicit UAT sign-off or approved risk=
+ acceptance</p></li>
+</ul></li>
+<li local-id=3D"44b909f18714">
+<p local-id=3D"830ccf010bc5"><strong>Production readiness gate</strong></p>
+<ul local-id=3D"1e55f8b750a9">
+<li local-id=3D"fec88a662c9f">
+<p local-id=3D"b980d59cddb3">Verify vulnerabilities, config and secrets syn=
+c, deployment sequence, rollback assets, and AOPM approval status</p></li>
+</ul></li>
+<li local-id=3D"b68d74319857">
+<p local-id=3D"c22d14679f90"><strong>Production deployment and closure</str=
+ong></p>
+<ul local-id=3D"acd97ec6db8e">
+<li local-id=3D"c36a3a49dbb5">
+<p local-id=3D"47402baa6567">Deploy in approved release window</p></li>
+<li local-id=3D"eac7084c2d77">
+<p local-id=3D"510ff315f33f">Validate post-deploy smoke and monitoring</p><=
+/li>
+<li local-id=3D"d5a5eb3dfc8c">
+<p local-id=3D"0dffb402ac2d">Publish closure note and known issues</p></li>
+</ul></li>
+</ol><span class=3D"confluence-embedded-file-wrapper image-center-wrapper c=
+onfluence-embedded-manual-size"><img class=3D"confluence-embedded-image ima=
+ge-center" alt=3D"Maximus Release Cycle.drawio.png" width=3D"468" loading=
+=3D"lazy" src=3D"f026168eabd29c0de1c73027e67487ba192b1ae56f354d36cbc6289a5f=
+07c7e1" data-image-src=3D"https://freechargebiz.atlassian.net/wiki/download=
+/attachments/448102477/Maximus%20Release%20Cycle.drawio.png?version=3D1&amp=
+;modificationDate=3D1788803845003&amp;cacheVersion=3D1&amp;api=3Dv2" data-h=
+eight=3D"801" data-width=3D"812" data-unresolved-comment-count=3D"0" data-l=
+inked-resource-id=3D"448102585" data-linked-resource-version=3D"1" data-lin=
+ked-resource-type=3D"attachment" data-linked-resource-default-alias=3D"Maxi=
+mus Release Cycle.drawio.png" data-base-url=3D"https://freechargebiz.atlass=
+ian.net/wiki" data-linked-resource-content-type=3D"image/png" data-linked-r=
+esource-container-id=3D"448102477" data-linked-resource-container-version=
+=3D"1" data-media-id=3D"4d045222-b0be-4255-a12b-47c1f6f07071" data-media-ty=
+pe=3D"file" height=3D"462"></span>
+<p local-id=3D"d92099d03ca0"></p>
+<h2 local-id=3D"b612ab20fb9b" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-StageTimelineTargets">Stage Timeline Targets</h2>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"92=
+670230e351" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"d1e5d6421b51">
+<th data-local-id=3D"3214728a6c23" class=3D"confluenceTh">
+<p local-id=3D"8cdadf37bb58">Stage</p></th>
+<th data-local-id=3D"9a60ca1bd551" class=3D"confluenceTh">
+<p local-id=3D"14031615e50d">Target Window</p></th>
+<th data-local-id=3D"74eaa9818f3d" class=3D"confluenceTh">
+<p local-id=3D"8610ee4902cc">Outcome</p></th>
+</tr>
+<tr data-local-id=3D"b419df1b91e3">
+<td data-local-id=3D"f31fc3b877a9" class=3D"confluenceTd">
+<p local-id=3D"88531bc13835">Cut-off and branch readiness</p></td>
+<td data-local-id=3D"4b493409c3b6" class=3D"confluenceTd">
+<p local-id=3D"f010e632b9a0">Day 0</p></td>
+<td data-local-id=3D"6321e6f9d457" class=3D"confluenceTd">
+<p local-id=3D"63dafe2c06f3">Release scope frozen and branches prepared</p>=
+</td>
+</tr>
+<tr data-local-id=3D"d1af40d8ab34">
+<td data-local-id=3D"8480f5f031de" class=3D"confluenceTd">
+<p local-id=3D"c46d1f9769d0">QA functional, regression, and BC checks</p></=
+td>
+<td data-local-id=3D"c839f3a6e9a9" class=3D"confluenceTd">
+<p local-id=3D"710dbe2298c6">Day 1-4</p></td>
+<td data-local-id=3D"dccc7ab38730" class=3D"confluenceTd">
+<p local-id=3D"799e4033af5d">Validated build with evidence</p></td>
+</tr>
+<tr data-local-id=3D"bd3b361c4b61">
+<td data-local-id=3D"21eadde0a56c" class=3D"confluenceTd">
+<p local-id=3D"847451eaa2ee">Sandbox promotion target</p></td>
+<td data-local-id=3D"eb62f25dad04" class=3D"confluenceTd">
+<p local-id=3D"a3ca4be1a79a">Day 5</p></td>
+<td data-local-id=3D"2bc6882ba8e9" class=3D"confluenceTd">
+<p local-id=3D"cb7f3c8ee69c">Promotion candidate stabilized</p></td>
+</tr>
+<tr data-local-id=3D"e6ab18325cfe">
+<td data-local-id=3D"7f2050586ccc" class=3D"confluenceTd">
+<p local-id=3D"8b1ee3b94353">PO and UAT validation</p></td>
+<td data-local-id=3D"0c44cee87263" class=3D"confluenceTd">
+<p local-id=3D"c0da22506adb">Day 6-8</p></td>
+<td data-local-id=3D"0826df6b70e1" class=3D"confluenceTd">
+<p local-id=3D"64b6a1927a3c">Business validation completed</p></td>
+</tr>
+<tr data-local-id=3D"2efed165314f">
+<td data-local-id=3D"9dfefd12c59a" class=3D"confluenceTd">
+<p local-id=3D"b1eb63329f63">Final QA sign-off and production readiness rev=
+iew</p></td>
+<td data-local-id=3D"933c2ab2c6d3" class=3D"confluenceTd">
+<p local-id=3D"32ea55f29443">Day 9</p></td>
+<td data-local-id=3D"81a47b875cff" class=3D"confluenceTd">
+<p local-id=3D"7e8ee5e624f3">Go/no-go decision prepared</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 local-id=3D"6b22e76b6f7f" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-MandatoryChecklistsandReleaseControls">Mandatory Checklists a=
+nd Release Controls</h1>
+<h2 local-id=3D"4dd61b785ea4" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-GlobalReleaseChecklist">Global Release Checklist</h2>
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"448102477">
+<li data-inline-task-id=3D"185"><span class=3D"placeholder-inline-tasks">Sc=
+ope matrix finalized and approved</span></li>
+<li data-inline-task-id=3D"186"><span class=3D"placeholder-inline-tasks">Re=
+lease notes page created or updated in Confluence</span></li>
+<li data-inline-task-id=3D"187"><span class=3D"placeholder-inline-tasks">Vu=
+lnerability status reviewed for all in-scope repositories</span></li>
+<li data-inline-task-id=3D"188"><span class=3D"placeholder-inline-tasks">Sh=
+ared and common service dependency checks completed</span></li>
+<li data-inline-task-id=3D"189"><span class=3D"placeholder-inline-tasks">De=
+ployment sequence and rollback owners published</span></li>
+<li data-inline-task-id=3D"190"><span class=3D"placeholder-inline-tasks">Se=
+ed branch cut completed for current release + 1 and verified with Build COP=
+</span></li>
+<li data-inline-task-id=3D"191"><span class=3D"placeholder-inline-tasks">Ba=
+ck-office seed branch cut completed for current release + 1 and verified wi=
+th Build COP</span></li>
+<li data-inline-task-id=3D"192"><span class=3D"placeholder-inline-tasks"><c=
+ode>maximus-dlp-helm</code> diff review completed between current release a=
+nd target release</span></li>
+<li data-inline-task-id=3D"193"><span class=3D"placeholder-inline-tasks"><c=
+ode>secret-config.txt</code> review completed, including whitespace and tra=
+iling-line hygiene</span></li>
+</ul>
+<h2 local-id=3D"27bf547fac08" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-ProductReadinessChecklist">Product Readiness Checklist</h2>
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"448102477">
+<li data-inline-task-id=3D"194"><span class=3D"placeholder-inline-tasks">Pr=
+oduct service, UI, and test repositories identified</span></li>
+<li data-inline-task-id=3D"195"><span class=3D"placeholder-inline-tasks">Pl=
+anned version to commit and build mapping completed</span></li>
+<li data-inline-task-id=3D"196"><span class=3D"placeholder-inline-tasks">Co=
+nfig, toggle, and secret changes documented</span></li>
+<li data-inline-task-id=3D"197"><span class=3D"placeholder-inline-tasks">Sm=
+oke, regression, and backward compatibility evidence attached</span></li>
+<li data-inline-task-id=3D"198"><span class=3D"placeholder-inline-tasks">Op=
+en defects triaged with release decision</span></li>
+</ul>
+<h2 local-id=3D"152ce2c0de7f" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-PlatformandSharedServicesChecklist">Platform and Shared Servi=
+ces Checklist</h2>
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"448102477">
+<li data-inline-task-id=3D"199"><span class=3D"placeholder-inline-tasks">He=
+lm, config, and seed changes validated in target environment</span></li>
+<li data-inline-task-id=3D"200"><span class=3D"placeholder-inline-tasks">Sh=
+ared services such as identity, auth, backoffice, and common services verif=
+ied for compatibility</span></li>
+<li data-inline-task-id=3D"201"><span class=3D"placeholder-inline-tasks">AP=
+I contract compatibility reviewed for producer and consumer impact</span></=
+li>
+<li data-inline-task-id=3D"202"><span class=3D"placeholder-inline-tasks">Mo=
+nitoring dashboards and alert thresholds validated</span></li>
+</ul>
+<h2 local-id=3D"316b1268bdce" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-ReleaseManagerFinalGate">Release Manager Final Gate</h2>
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"448102477">
+<li data-inline-task-id=3D"203"><span class=3D"placeholder-inline-tasks">QA=
+ sign-off captured for all products in scope</span></li>
+<li data-inline-task-id=3D"204"><span class=3D"placeholder-inline-tasks">UA=
+T sign-off captured for all products in scope</span></li>
+<li data-inline-task-id=3D"205"><span class=3D"placeholder-inline-tasks">Go=
+/no-go decision logged with timestamp and approvers</span></li>
+<li data-inline-task-id=3D"206"><span class=3D"placeholder-inline-tasks">Po=
+st-release communication issued</span></li>
+<li data-inline-task-id=3D"207"><span class=3D"placeholder-inline-tasks">Te=
+ams call for release window created in advance</span></li>
+</ul>
+<h2 local-id=3D"9a3678489091" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-MandatoryApprovalsandGovernanceGates">Mandatory Approvals and=
+ Governance Gates</h2>
+<ul local-id=3D"1dc3fee7c978">
+<li local-id=3D"0b02b16cace4">
+<p local-id=3D"5c3addc32b5f">QA sign-off from QA Head or delegate</p></li>
+<li local-id=3D"bb626feaeb51">
+<p local-id=3D"b9ce1b004cda">IT approval</p></li>
+<li local-id=3D"ad4d3da3d563">
+<p local-id=3D"7c2475912e55">Security or InfoSec approval</p></li>
+<li local-id=3D"0edec1a15a98">
+<p local-id=3D"256884aabb2f">Product Owner sign-off</p></li>
+<li local-id=3D"558fc5600f64">
+<p local-id=3D"d6d185028579">AOPM multi-level approval from L2-L5 as applic=
+able</p></li>
+</ul>
+<div class=3D"confluence-information-macro confluence-information-macro-war=
+ning">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-error confluence-inform=
+ation-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p local-id=3D"81caf3657976"><strong>Hard stop:</strong> Production go-live=
+ must be blocked if required approvals, regression evidence, backward compa=
+tibility evidence, security treatment, or rollback readiness are incomplete=
+.</p>
+</div>
+</div>
+<h1 local-id=3D"5b673adbbe85" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-MandatoryReleaseEvidence,Rollback,andExceptions">Mandatory Re=
+lease Evidence, Rollback, and Exceptions</h1>
+<h2 local-id=3D"5bcb37e94858" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-EvidenceRequiredforEveryIn-ScopeProduct">Evidence Required fo=
+r Every In-Scope Product</h2>
+<ul local-id=3D"b69f175dd56f">
+<li local-id=3D"7f22a1115122">
+<p local-id=3D"82527f71f621">Service and UI versions deployed</p></li>
+<li local-id=3D"56986bd84e6f">
+<p local-id=3D"4a003ee0b7f6">Smoke test report links</p></li>
+<li local-id=3D"9424a7a49718">
+<p local-id=3D"9380ad589020">Regression test report links</p></li>
+<li local-id=3D"b75ef68871bc">
+<p local-id=3D"b23328d120b5">Backward compatibility status</p></li>
+<li local-id=3D"acd9eab0eef0">
+<p local-id=3D"3b8b3a8c111d">Known issues, waivers, and mitigations</p></li=
+>
+<li local-id=3D"b9f952136222">
+<p local-id=3D"b7036510b189">Rollback notes and owner</p></li>
+<li local-id=3D"aea89ad477b3">
+<p local-id=3D"eca3c918e5b8">QA and UAT sign-offs</p></li>
+</ul>
+<h2 local-id=3D"89426c0909bc" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-RollbackGuideline">Rollback Guideline</h2>
+<ul local-id=3D"c193d8ad8c75">
+<li local-id=3D"c12b36adebc1">
+<p local-id=3D"53066b05b246">Keep rollback artifact or tag ready for each i=
+n-scope product</p></li>
+<li local-id=3D"0c8f0d245f2c">
+<p local-id=3D"c1d699787597">Define rollback triggers such as critical jour=
+ney failure, sustained error rate, data inconsistency, or severe security i=
+ssue</p></li>
+<li local-id=3D"333a66a25ce9">
+<p local-id=3D"65d15a1d73fd">Assign rollback executor and approver per prod=
+uct and shared service</p></li>
+<li local-id=3D"42e9135f2a9c">
+<p local-id=3D"504c36a5d429">Record exact rollback pipeline or command and =
+post-rollback validation checks</p></li>
+<li local-id=3D"1436693c30ef">
+<p local-id=3D"d38ba0180019">Document reversibility for override image or p=
+od patch changes where temporary patching is used</p></li>
+</ul>
+<h2 local-id=3D"403004a0fdeb" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-ExceptionHandlingandEdgeCases">Exception Handling and Edge Ca=
+ses</h2>
+<ul local-id=3D"9cf324f13963">
+<li local-id=3D"6881b41d9724">
+<p local-id=3D"e9ec01a14db1"><strong>Missed cut-off for product-only servic=
+e:</strong> Move to next planned release unless exception is approved</p></=
+li>
+<li local-id=3D"7f7d692eb4a4">
+<p local-id=3D"ec5e60ab8a5c"><strong>Missed cut-off for common service:</st=
+rong> Release remains blocked unless a time-boxed extension is approved by =
+release governance</p></li>
+<li local-id=3D"edf8ab71444a">
+<p local-id=3D"f4f9bfbe5c96"><strong>Missing hotfix merge into master relea=
+se branch:</strong> Block go-live until merge or reconciliation is complete=
+</p></li>
+<li local-id=3D"9b80e230657e">
+<p local-id=3D"04e3da850e15"><strong>Open high or critical security finding=
+s:</strong> Block production go-live unless approved risk treatment exists<=
+/p></li>
+<li local-id=3D"0232efefab7c">
+<p local-id=3D"ce7d27cc0ff5"><strong>Incomplete regression or backward comp=
+atibility evidence:</strong> Block production promotion</p></li>
+</ul>
+<h1 local-id=3D"b8c3571cd6ff" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-OperationalDeploymentControlsandEnvironmentReferences">Operat=
+ional Deployment Controls and Environment References</h1>
+<h2 local-id=3D"7c403fb9c988" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-CommonOperationalControls">Common Operational Controls</h2>
+<ul local-id=3D"380d44fff44d">
+<li local-id=3D"f6417a4377b2">
+<p local-id=3D"490ec50b9663">Trigger and validate common service builds fro=
+m approved branch strategy</p></li>
+<li local-id=3D"e818dab6058a">
+<p local-id=3D"dedf1a57acc3">Freeze and unfreeze QA and Sandbox pipelines o=
+nly through Release Owner and Build COP control</p></li>
+<li local-id=3D"3fb5919560a4">
+<p local-id=3D"f1e898d2b1d9">Keep the release Confluence page current with =
+every environment promotion</p></li>
+</ul>
+<h2 local-id=3D"474d2e60fb2e" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-PatchingControls">Patching Controls</h2>
+<ul local-id=3D"c16da1789377">
+<li local-id=3D"545058ebffac">
+<p local-id=3D"dfa3a38dfb0f">Use approved self-service patching flow for te=
+mporary override patches in QA, PERF, and Sandbox</p></li>
+<li local-id=3D"e6b1e1985fad">
+<p local-id=3D"182d924bae5e">Validate pod image versions before and after p=
+atch</p></li>
+<li local-id=3D"2d7e248a2202">
+<p local-id=3D"a49e6708eead">Record reason, owner, start time, and rollback=
+ time for each patch</p></li>
+</ul>
+<h2 local-id=3D"8e8e22e829cd" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-DeploymentSequence">Deployment Sequence</h2>
+<ol start=3D"1" local-id=3D"ae90ce7349a5">
+<li local-id=3D"02b7cf46908b">
+<p local-id=3D"2e288b8f6d3e">Execute release foundation pipelines, includin=
+g all-release and shared platform flows</p></li>
+<li local-id=3D"b55685f25342">
+<p local-id=3D"1aa1df4b694e">Promote seed and back-office seed paths as per=
+ release gate</p></li>
+<li local-id=3D"b4b5fe00934d">
+<p local-id=3D"54bcf048b732">Trigger product all-release pipelines in appro=
+ved batches, in parallel only where safe</p></li>
+</ol>
+<h2 local-id=3D"b8f600765656" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-VulnerabilityDashboard">Vulnerability Dashboard</h2>
+<p local-id=3D"12a319fef12b">Non-Prod Environment Vulnerability Dashboard: =
+<a href=3D"https://dlp-sit.dev.maximus.axisb.com/springboot-upgrade" class=
+=3D"external-link" rel=3D"nofollow">Spring Boot Upgrade Dashboard</a></p>
+<ol start=3D"1" local-id=3D"f84cd62c31b7">
+<li local-id=3D"edd7899eddad">
+<p local-id=3D"871f3aef4000">Access the dashboard URL</p></li>
+<li local-id=3D"cfc077e6da9a">
+<p local-id=3D"118cbac95725">Select <strong>Group by Service Name</strong> =
+in view mode</p></li>
+<li local-id=3D"548154fbaa58">
+<p local-id=3D"1a183e43b5eb">Expand the target service and review the grace=
+ period and applicable CVEs</p></li>
+<li local-id=3D"f26c3026e86d">
+<p local-id=3D"707bbb9d7d8e">Plan and complete remediation before the grace=
+ period ends</p></li>
+</ol>
+<h2 local-id=3D"2e04283964aa" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-CheckingSmokesBeforeSITCutorQAFreeze">Checking Smokes Before =
+SIT Cut or QA Freeze</h2>
+<ol start=3D"1" local-id=3D"1d65a8fc9314">
+<li local-id=3D"6eccdc47647d">
+<p local-id=3D"be3eb1ecdd32">Log in to Jenkins: <a href=3D"https://jenkinsc=
+.axisb.com/jenkins/login?from=3D%2Fjenkins%2Fjob%2FMaximus_916_NonProd%2F" =
+class=3D"external-link" rel=3D"nofollow">Maximus Jenkins</a></p></li>
+<li local-id=3D"d5971a33346d">
+<p local-id=3D"43598c51254e">Navigate to <code>Maximus_916_NonProd -&gt; si=
+t -&gt; Master Deploy / Master Release Smoke</code></p></li>
+<li local-id=3D"62ef45773898">
+<p local-id=3D"c855c998c1b0">Review each service pipeline and confirm succe=
+ssful smoke test execution</p></li>
+</ol>
+<h2 local-id=3D"603639892d6c" id=3D"CopyofMaximusMasterReleaseDocumentation=
+andGuidelines-EnvironmentDeploymentReferences">Environment Deployment Refer=
+ences</h2>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout single" data-layout=3D"single">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<p local-id=3D"09391495c673">Open product-wise Jenkins deployment links</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" data-local-id=3D"da65baf9c213" class=3D"conflue=
+nceTable">
+<tbody>
+<tr data-local-id=3D"ecddc7d7a20c">
+<th data-local-id=3D"ff7f77d311e1" class=3D"confluenceTh">
+<p local-id=3D"a16736841863">Product</p></th>
+<th data-local-id=3D"f17b57a30623" class=3D"confluenceTh">
+<p local-id=3D"9bd855b0b960">SIT / SIT1</p></th>
+<th data-local-id=3D"c95846eaf1ae" class=3D"confluenceTh">
+<p local-id=3D"3407c7b47428">QA / QA1</p></th>
+<th data-local-id=3D"f77504ebc502" class=3D"confluenceTh">
+<p local-id=3D"0884b4cf5f61">Sandbox / SB1</p></th>
+<th data-local-id=3D"d0c4b78366ce" class=3D"confluenceTh">
+<p local-id=3D"463f2ec32afc">UAT</p></th>
+<th data-local-id=3D"d2e70516f92d" class=3D"confluenceTh">
+<p local-id=3D"77e1c98e3ca8">Pre-Prod</p></th>
+</tr>
+<tr data-local-id=3D"8f0c36df44b1">
+<td data-local-id=3D"a873977deabb" class=3D"confluenceTd">
+<p local-id=3D"f11d717ae947">Commons</p></td>
+<td data-local-id=3D"42632d599a48" class=3D"confluenceTd">
+<p local-id=3D"dc0f788258b9"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sit/job/maximus-sit-deploy/" class=3D"external-=
+link" rel=3D"nofollow">SIT</a>, <a href=3D"https://jenkinsc.axisb.com/jenki=
+ns/job/Maximus_916_NonProd/job/sit1/job/maximus-sit1-deploy/" class=3D"exte=
+rnal-link" rel=3D"nofollow">SIT1</a></p></td>
+<td data-local-id=3D"3f1b3b2edbca" class=3D"confluenceTd">
+<p local-id=3D"0fed1075cce9"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/qa/job/maximus-qa-deploy/" class=3D"external-li=
+nk" rel=3D"nofollow">QA</a>, <a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/qa1/job/maximus-qa1-deploy/" class=3D"external-=
+link" rel=3D"nofollow">QA1</a></p></td>
+<td data-local-id=3D"67af44edee58" class=3D"confluenceTd">
+<p local-id=3D"6989b5a4ceb5"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sandbox/job/maximus-sandbox-deploy/" class=3D"e=
+xternal-link" rel=3D"nofollow">SB</a>, <a href=3D"https://jenkinsc.axisb.co=
+m/jenkins/job/Maximus_916_NonProd/job/sandbox1/job/maximus-sandbox1-deploy/=
+" class=3D"external-link" rel=3D"nofollow">SB1</a></p></td>
+<td data-local-id=3D"3ea5210d5863" class=3D"confluenceTd">
+<p local-id=3D"b6cb69a77342"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/uat/job/maximus-uat-deploy/" class=3D"external-=
+link" rel=3D"nofollow">UAT</a></p></td>
+<td data-local-id=3D"a469748cd015" class=3D"confluenceTd">
+<p local-id=3D"7c774371486c"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/prod/job/maximus-prod-deploy/" class=3D"externa=
+l-link" rel=3D"nofollow">Prod</a></p></td>
+</tr>
+<tr data-local-id=3D"9d8455815110">
+<td data-local-id=3D"c7953628d566" class=3D"confluenceTd">
+<p local-id=3D"48714ab7ec99">Personal Loan (PL)</p></td>
+<td data-local-id=3D"c0f44631f52e" class=3D"confluenceTd">
+<p local-id=3D"032951f35799"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sit/view/Master%20Deploy/job/personal-loan-sit-=
+deploy/" class=3D"external-link" rel=3D"nofollow">SIT</a></p></td>
+<td data-local-id=3D"e174e364085d" class=3D"confluenceTd">
+<p local-id=3D"4e42de7a9a0e"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/qa/job/personal-loan-qa-deploy/" class=3D"exter=
+nal-link" rel=3D"nofollow">QA</a>, <a href=3D"https://jenkinsc.axisb.com/je=
+nkins/job/Maximus_916_NonProd/job/qa1/job/personal-loan-qa1-deploy/" class=
+=3D"external-link" rel=3D"nofollow">QA1</a></p></td>
+<td data-local-id=3D"002cf008e5ed" class=3D"confluenceTd">
+<p local-id=3D"f478859ce12e"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sandbox/job/personal-loan-sandbox-deploy/" clas=
+s=3D"external-link" rel=3D"nofollow">SB</a>, <a href=3D"https://jenkinsc.ax=
+isb.com/jenkins/job/Maximus_916_NonProd/job/sandbox1/job/personal-loan-sand=
+box1-deploy/" class=3D"external-link" rel=3D"nofollow">SB1</a></p></td>
+<td data-local-id=3D"edc53e3362cd" class=3D"confluenceTd">
+<p local-id=3D"4881f4434155"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/uat/job/personal-loan-uat-deploy/" class=3D"ext=
+ernal-link" rel=3D"nofollow">UAT</a></p></td>
+<td data-local-id=3D"1738e224a62f" class=3D"confluenceTd">
+<p local-id=3D"04f6b1d426ee"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/prod/job/personal-loan-prod-deploy/" class=3D"e=
+xternal-link" rel=3D"nofollow">Prod</a></p></td>
+</tr>
+<tr data-local-id=3D"932cfdb7f2b0">
+<td data-local-id=3D"669f5f48e021" class=3D"confluenceTd">
+<p local-id=3D"eb0cbfb10a8a">Business Loan (BL)</p></td>
+<td data-local-id=3D"e3dd15510ca3" class=3D"confluenceTd">
+<p local-id=3D"b96bb311bab3"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sit/job/business-loan-sit-deploy/" class=3D"ext=
+ernal-link" rel=3D"nofollow">SIT</a>, <a href=3D"https://jenkinsc.axisb.com=
+/jenkins/job/Maximus_916_NonProd/job/sit1/job/business-loan-sit1-deploy/" c=
+lass=3D"external-link" rel=3D"nofollow">SIT1</a></p></td>
+<td data-local-id=3D"45a517f6bcfc" class=3D"confluenceTd">
+<p local-id=3D"eda71b9ea56c"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/qa/job/business-loan-qa-deploy/" class=3D"exter=
+nal-link" rel=3D"nofollow">QA</a>, <a href=3D"https://jenkinsc.axisb.com/je=
+nkins/job/Maximus_916_NonProd/job/qa1/job/business-loan-qa1-deploy/" class=
+=3D"external-link" rel=3D"nofollow">QA1</a></p></td>
+<td data-local-id=3D"15573e04b9da" class=3D"confluenceTd">
+<p local-id=3D"eddd33feedab"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sandbox/job/business-loan-sandbox-deploy/" clas=
+s=3D"external-link" rel=3D"nofollow">SB</a>, <a href=3D"https://jenkinsc.ax=
+isb.com/jenkins/job/Maximus_916_NonProd/job/sandbox1/job/business-loan-sand=
+box1-deploy/" class=3D"external-link" rel=3D"nofollow">SB1</a></p></td>
+<td data-local-id=3D"823d3e1a1d20" class=3D"confluenceTd">
+<p local-id=3D"cf7f5b6ca394"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/uat/job/business-loan-uat-deploy/" class=3D"ext=
+ernal-link" rel=3D"nofollow">UAT</a></p></td>
+<td data-local-id=3D"9da5652f5855" class=3D"confluenceTd">
+<p local-id=3D"c5e38b10611d"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/prod/job/business-loan-prod-deploy/" class=3D"e=
+xternal-link" rel=3D"nofollow">Prod</a>, <a href=3D"https://jenkinsc.axisb.=
+com/jenkins/job/Maximus_916_NonProd/job/business-loan-all-release/" class=
+=3D"external-link" rel=3D"nofollow">All Release</a></p></td>
+</tr>
+<tr data-local-id=3D"188ed2bacb8a">
+<td data-local-id=3D"2be25f0e9566" class=3D"confluenceTd">
+<p local-id=3D"915c789b6ba4">Home Loan (HL)</p></td>
+<td data-local-id=3D"20700d4f2422" class=3D"confluenceTd">
+<p local-id=3D"b13b8a282519"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sit/job/home-loan-sit-deploy/" class=3D"externa=
+l-link" rel=3D"nofollow">SIT</a>, <a href=3D"https://jenkinsc.axisb.com/jen=
+kins/job/Maximus_916_NonProd/job/sit1/job/home-loan-sit1-deploy/" class=3D"=
+external-link" rel=3D"nofollow">SIT1</a></p></td>
+<td data-local-id=3D"039c954231ef" class=3D"confluenceTd">
+<p local-id=3D"82109f46d6f3"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/qa/job/home-loan-qa-deploy/" class=3D"external-=
+link" rel=3D"nofollow">QA</a>, <a href=3D"https://jenkinsc.axisb.com/jenkin=
+s/job/Maximus_916_NonProd/job/qa1/job/home-loan-qa1-deploy/" class=3D"exter=
+nal-link" rel=3D"nofollow">QA1</a></p></td>
+<td data-local-id=3D"668368e8d23a" class=3D"confluenceTd">
+<p local-id=3D"5a877a778791"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sandbox/job/home-loan-sandbox-deploy/" class=3D=
+"external-link" rel=3D"nofollow">SB</a>, <a href=3D"https://jenkinsc.axisb.=
+com/jenkins/job/Maximus_916_NonProd/job/sandbox1/job/home-loan-sandbox1-dep=
+loy/" class=3D"external-link" rel=3D"nofollow">SB1</a></p></td>
+<td data-local-id=3D"debb071ae29d" class=3D"confluenceTd">
+<p local-id=3D"6dfd42f7d726"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/uat/job/home-loan-uat-deploy/" class=3D"externa=
+l-link" rel=3D"nofollow">UAT</a></p></td>
+<td data-local-id=3D"f9ddc8a16869" class=3D"confluenceTd">
+<p local-id=3D"b7803ec13ca5"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/prod/job/home-loan-prod-deploy/" class=3D"exter=
+nal-link" rel=3D"nofollow">Prod</a>, <a href=3D"https://jenkinsc.axisb.com/=
+jenkins/job/Maximus_916_NonProd/job/home-loan-all-release/" class=3D"extern=
+al-link" rel=3D"nofollow">All Release</a></p></td>
+</tr>
+<tr data-local-id=3D"8971ace4a9f5">
+<td data-local-id=3D"2fe85dc9f0a6" class=3D"confluenceTd">
+<p local-id=3D"43f58edb3f07">Auto Loan</p></td>
+<td data-local-id=3D"ed32bab7f422" class=3D"confluenceTd">
+<p local-id=3D"914a4dd2243a"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sit/job/auto-loan-sit-deploy/" class=3D"externa=
+l-link" rel=3D"nofollow">SIT</a>, <a href=3D"https://jenkinsc.axisb.com/jen=
+kins/job/Maximus_916_NonProd/job/sit1/job/auto-loan-sit1-deploy/" class=3D"=
+external-link" rel=3D"nofollow">SIT1</a></p></td>
+<td data-local-id=3D"ec33fbccfd7e" class=3D"confluenceTd">
+<p local-id=3D"07a9c44cec98"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/qa/job/auto-loan-qa-deploy/" class=3D"external-=
+link" rel=3D"nofollow">QA</a>, <a href=3D"https://jenkinsc.axisb.com/jenkin=
+s/job/Maximus_916_NonProd/job/qa1/job/auto-loan-qa1-deploy/" class=3D"exter=
+nal-link" rel=3D"nofollow">QA1</a></p></td>
+<td data-local-id=3D"bb49b83337ae" class=3D"confluenceTd">
+<p local-id=3D"c5cb07c5fa2f"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sandbox/job/auto-loan-sandbox-deploy/" class=3D=
+"external-link" rel=3D"nofollow">SB</a>, <a href=3D"https://jenkinsc.axisb.=
+com/jenkins/job/Maximus_916_NonProd/job/sandbox1/job/auto-loan-sandbox1-dep=
+loy/" class=3D"external-link" rel=3D"nofollow">SB1</a></p></td>
+<td data-local-id=3D"b3899eb4e533" class=3D"confluenceTd">
+<p local-id=3D"28d2ea299e78"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/uat/job/auto-loan-uat-deploy/" class=3D"externa=
+l-link" rel=3D"nofollow">UAT</a></p></td>
+<td data-local-id=3D"292b1dfabd9c" class=3D"confluenceTd">
+<p local-id=3D"6ec813d70163"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/prod/job/auto-loan-prod-deploy/" class=3D"exter=
+nal-link" rel=3D"nofollow">Prod</a>, <a href=3D"https://jenkinsc.axisb.com/=
+jenkins/job/Maximus_916_NonProd/job/auto-loan-all-release/" class=3D"extern=
+al-link" rel=3D"nofollow">All Release</a></p></td>
+</tr>
+<tr data-local-id=3D"688ce98d51dd">
+<td data-local-id=3D"67dbb3c0a3dc" class=3D"confluenceTd">
+<p local-id=3D"7000c826d1a9">Credit Card (CC)</p></td>
+<td data-local-id=3D"534cbcdda1ad" class=3D"confluenceTd">
+<p local-id=3D"ce120ae7892e"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sit/job/credit-card-sit-deploy/" class=3D"exter=
+nal-link" rel=3D"nofollow">SIT</a>, <a href=3D"https://jenkinsc.axisb.com/j=
+enkins/job/Maximus_916_NonProd/job/sit1/job/credit-card-sit1-deploy/" class=
+=3D"external-link" rel=3D"nofollow">SIT1</a></p></td>
+<td data-local-id=3D"3075daec9aee" class=3D"confluenceTd">
+<p local-id=3D"87b0ccdeeb5d"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/qa/job/credit-card-qa-deploy/" class=3D"externa=
+l-link" rel=3D"nofollow">QA</a>, <a href=3D"https://jenkinsc.axisb.com/jenk=
+ins/job/Maximus_916_NonProd/job/qa1/job/credit-card-qa1-deploy/" class=3D"e=
+xternal-link" rel=3D"nofollow">QA1</a></p></td>
+<td data-local-id=3D"30a6a65ac5ce" class=3D"confluenceTd">
+<p local-id=3D"096b5150b9be"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sandbox/job/credit-card-sandbox-deploy/" class=
+=3D"external-link" rel=3D"nofollow">Sandbox</a>, <a href=3D"https://jenkins=
+c.axisb.com/jenkins/job/Maximus_916_NonProd/job/sandbox1/job/credit-card-sa=
+ndbox1-deploy/" class=3D"external-link" rel=3D"nofollow">SB1</a></p></td>
+<td data-local-id=3D"363f93fc8309" class=3D"confluenceTd">
+<p local-id=3D"77c0989fc383"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/uat/job/credit-card-uat-deploy/" class=3D"exter=
+nal-link" rel=3D"nofollow">UAT</a></p></td>
+<td data-local-id=3D"e0f2a7990030" class=3D"confluenceTd">
+<p local-id=3D"28be9bde48c0"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/prod/job/credit-card-prod-deploy/" class=3D"ext=
+ernal-link" rel=3D"nofollow">Prod</a>, <a href=3D"https://jenkinsc.axisb.co=
+m/jenkins/job/Maximus_916_NonProd/job/credit-card-all-release/" class=3D"ex=
+ternal-link" rel=3D"nofollow">All Release</a></p></td>
+</tr>
+<tr data-local-id=3D"74c49fec2c29">
+<td data-local-id=3D"a750128bf164" class=3D"confluenceTd">
+<p local-id=3D"b45c8e7460f9">Working Capital</p></td>
+<td data-local-id=3D"96e70b43feea" class=3D"confluenceTd">
+<p local-id=3D"85664dfb44ec"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sit/job/working-capital-sit-deploy/" class=3D"e=
+xternal-link" rel=3D"nofollow">SIT</a>, <a href=3D"https://jenkinsc.axisb.c=
+om/jenkins/job/Maximus_916_NonProd/job/sit1/job/working-capital-sit1-deploy=
+/" class=3D"external-link" rel=3D"nofollow">SIT1</a></p></td>
+<td data-local-id=3D"14cfe6bd23e7" class=3D"confluenceTd">
+<p local-id=3D"e1f8a513b21d"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/qa/job/working-capital-qa-deploy/" class=3D"ext=
+ernal-link" rel=3D"nofollow">QA</a>, <a href=3D"https://jenkinsc.axisb.com/=
+jenkins/job/Maximus_916_NonProd/job/qa1/job/working-capital-qa1-deploy/" cl=
+ass=3D"external-link" rel=3D"nofollow">QA1</a></p></td>
+<td data-local-id=3D"89c460d17540" class=3D"confluenceTd">
+<p local-id=3D"61fff1620915"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sandbox/job/working-capital-sandbox-deploy/" cl=
+ass=3D"external-link" rel=3D"nofollow">SB</a>, <a href=3D"https://jenkinsc.=
+axisb.com/jenkins/job/Maximus_916_NonProd/job/sandbox1/job/working-capital-=
+sandbox1-deploy/" class=3D"external-link" rel=3D"nofollow">SB1</a></p></td>
+<td data-local-id=3D"edf698f01ca7" class=3D"confluenceTd">
+<p local-id=3D"469ee7b64a62"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/uat/job/working-capital-uat-deploy/" class=3D"e=
+xternal-link" rel=3D"nofollow">UAT</a></p></td>
+<td data-local-id=3D"608eb4b1dbe9" class=3D"confluenceTd">
+<p local-id=3D"2978c872f955"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/prod/job/working-capital-prod-deploy/" class=3D=
+"external-link" rel=3D"nofollow">Prod</a>, <a href=3D"https://jenkinsc.axis=
+b.com/jenkins/job/Maximus_916_NonProd/job/working-capital-all-release/" cla=
+ss=3D"external-link" rel=3D"nofollow">All Release</a></p></td>
+</tr>
+<tr data-local-id=3D"e0c971d600a8">
+<td data-local-id=3D"97ed373e07f4" class=3D"confluenceTd">
+<p local-id=3D"32751f430647">LAS</p></td>
+<td data-local-id=3D"90b46c005262" class=3D"confluenceTd">
+<p local-id=3D"9119ebe19e92"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sit/job/las-sit-deploy/" class=3D"external-link=
+" rel=3D"nofollow">SIT</a>, <a href=3D"https://jenkinsc.axisb.com/jenkins/j=
+ob/Maximus_916_NonProd/job/sit1/job/las-sit1-deploy/" class=3D"external-lin=
+k" rel=3D"nofollow">SIT1</a></p></td>
+<td data-local-id=3D"6173c4ef8477" class=3D"confluenceTd">
+<p local-id=3D"83eab0ed0a74"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/qa/job/las-qa-deploy/" class=3D"external-link" =
+rel=3D"nofollow">QA</a>, <a href=3D"https://jenkinsc.axisb.com/jenkins/job/=
+Maximus_916_NonProd/job/qa1/job/las-qa1-deploy/" class=3D"external-link" re=
+l=3D"nofollow">QA1</a></p></td>
+<td data-local-id=3D"d3482f27b9fa" class=3D"confluenceTd">
+<p local-id=3D"3456ac5215a7"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sandbox/job/las-sandbox-deploy/" class=3D"exter=
+nal-link" rel=3D"nofollow">SB</a>, <a href=3D"https://jenkinsc.axisb.com/je=
+nkins/job/Maximus_916_NonProd/job/sandbox1/job/las-sandbox1-deploy/" class=
+=3D"external-link" rel=3D"nofollow">SB1</a></p></td>
+<td data-local-id=3D"a85826cc0e2a" class=3D"confluenceTd">
+<p local-id=3D"312d82d80564"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/uat/job/las-uat-deploy/" class=3D"external-link=
+" rel=3D"nofollow">UAT</a></p></td>
+<td data-local-id=3D"4e80fb6185b8" class=3D"confluenceTd">
+<p local-id=3D"cd359b7ee7cb"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/prod/job/las-prod-deploy/" class=3D"external-li=
+nk" rel=3D"nofollow">Prod</a>, <a href=3D"https://jenkinsc.axisb.com/jenkin=
+s/job/Maximus_916_NonProd/job/las-all-release/" class=3D"external-link" rel=
+=3D"nofollow">All Release</a></p></td>
+</tr>
+<tr data-local-id=3D"3727125262fb">
+<td data-local-id=3D"3323169bfb3f" class=3D"confluenceTd">
+<p local-id=3D"aa699bfab495">ODSAL</p></td>
+<td data-local-id=3D"78141174f44f" class=3D"confluenceTd">
+<p local-id=3D"727ea90dd3c7"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sit/job/odsal-sit-deploy/" class=3D"external-li=
+nk" rel=3D"nofollow">SIT</a>, <a href=3D"https://jenkinsc.axisb.com/jenkins=
+/job/Maximus_916_NonProd/job/sit1/job/odsal-sit1-deploy/" class=3D"external=
+-link" rel=3D"nofollow">SIT1</a></p></td>
+<td data-local-id=3D"73acba705a93" class=3D"confluenceTd">
+<p local-id=3D"38cf619d9892"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/qa/job/odsal-qa-deploy/" class=3D"external-link=
+" rel=3D"nofollow">QA</a>, <a href=3D"https://jenkinsc.axisb.com/jenkins/jo=
+b/Maximus_916_NonProd/job/qa1/job/odsal-qa1-deploy/" class=3D"external-link=
+" rel=3D"nofollow">QA1</a></p></td>
+<td data-local-id=3D"a57b98a3b603" class=3D"confluenceTd">
+<p local-id=3D"b2f6eae2e7fc"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sandbox/job/odsal-sandbox-deploy/" class=3D"ext=
+ernal-link" rel=3D"nofollow">SB</a>, <a href=3D"https://jenkinsc.axisb.com/=
+jenkins/job/Maximus_916_NonProd/job/sandbox1/job/odsal-sandbox1-deploy/" cl=
+ass=3D"external-link" rel=3D"nofollow">SB1</a></p></td>
+<td data-local-id=3D"a861468c92cb" class=3D"confluenceTd">
+<p local-id=3D"8fe314e97edf"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/uat/job/odsal-uat-deploy/" class=3D"external-li=
+nk" rel=3D"nofollow">UAT</a></p></td>
+<td data-local-id=3D"e8fdef76b7fb" class=3D"confluenceTd">
+<p local-id=3D"c4b21456af84"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/prod/job/odsal-prod-deploy/" class=3D"external-=
+link" rel=3D"nofollow">Prod</a>, <a href=3D"https://jenkinsc.axisb.com/jenk=
+ins/job/Maximus_916_NonProd/job/odsal-all-release/" class=3D"external-link"=
+ rel=3D"nofollow">All Release</a></p></td>
+</tr>
+<tr data-local-id=3D"ef5b9c254908">
+<td data-local-id=3D"2f0128af7d5b" class=3D"confluenceTd">
+<p local-id=3D"f18fad6852c8">Forex</p></td>
+<td data-local-id=3D"7f9387523aaf" class=3D"confluenceTd">
+<p local-id=3D"e65b7b36d9a5"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sit/job/forex-sit-deploy/" class=3D"external-li=
+nk" rel=3D"nofollow">SIT</a>, <a href=3D"https://jenkinsc.axisb.com/jenkins=
+/job/Maximus_916_NonProd/job/sit1/job/forex-sit1-deploy/" class=3D"external=
+-link" rel=3D"nofollow">SIT1</a></p></td>
+<td data-local-id=3D"da62479ea860" class=3D"confluenceTd">
+<p local-id=3D"afc15b36dcdb"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/qa/job/forex-qa-deploy/" class=3D"external-link=
+" rel=3D"nofollow">QA</a>, <a href=3D"https://jenkinsc.axisb.com/jenkins/jo=
+b/Maximus_916_NonProd/job/qa1/job/forex-qa1-deploy/" class=3D"external-link=
+" rel=3D"nofollow">QA1</a></p></td>
+<td data-local-id=3D"5f67736c040d" class=3D"confluenceTd">
+<p local-id=3D"e3f5e7c51121"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sandbox/job/forex-sandbox-deploy/" class=3D"ext=
+ernal-link" rel=3D"nofollow">SB</a>, <a href=3D"https://jenkinsc.axisb.com/=
+jenkins/job/Maximus_916_NonProd/job/sandbox1/job/forex-sandbox1-deploy/" cl=
+ass=3D"external-link" rel=3D"nofollow">SB1</a></p></td>
+<td data-local-id=3D"c0fe2f303934" class=3D"confluenceTd">
+<p local-id=3D"7c81ffea448b"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/uat/job/forex-uat-deploy/" class=3D"external-li=
+nk" rel=3D"nofollow">UAT</a></p></td>
+<td data-local-id=3D"134f4319b77d" class=3D"confluenceTd">
+<p local-id=3D"3aa3fd44c3cc"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/prod/job/forex-prod-deploy/" class=3D"external-=
+link" rel=3D"nofollow">Prod</a>, <a href=3D"https://jenkinsc.axisb.com/jenk=
+ins/job/Maximus_916_NonProd/job/forex-all-release/" class=3D"external-link"=
+ rel=3D"nofollow">All Release</a></p></td>
+</tr>
+<tr data-local-id=3D"cbb254edbf90">
+<td data-local-id=3D"e61e41b04cff" class=3D"confluenceTd">
+<p local-id=3D"ec431d905270">Tractor Loan</p></td>
+<td data-local-id=3D"7a275dfd45f3" class=3D"confluenceTd">
+<p local-id=3D"04931bc621a7"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sit/job/tractor-loan-sit-deploy/" class=3D"exte=
+rnal-link" rel=3D"nofollow">SIT</a>, <a href=3D"https://jenkinsc.axisb.com/=
+jenkins/job/Maximus_916_NonProd/job/sit1/job/tractor-loan-sit1-deploy/" cla=
+ss=3D"external-link" rel=3D"nofollow">SIT1</a></p></td>
+<td data-local-id=3D"29fde7387702" class=3D"confluenceTd">
+<p local-id=3D"e1708caabdd5"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/qa/job/tractor-loan-qa-deploy/" class=3D"extern=
+al-link" rel=3D"nofollow">QA</a>, <a href=3D"https://jenkinsc.axisb.com/jen=
+kins/job/Maximus_916_NonProd/job/qa1/job/tractor-loan-qa1-deploy/" class=3D=
+"external-link" rel=3D"nofollow">QA1</a></p></td>
+<td data-local-id=3D"1b6df52bcf7e" class=3D"confluenceTd">
+<p local-id=3D"23d096dd5692"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/sandbox/job/tractor-loan-sandbox-deploy/" class=
+=3D"external-link" rel=3D"nofollow">SB</a>, <a href=3D"https://jenkinsc.axi=
+sb.com/jenkins/job/Maximus_916_NonProd/job/sandbox1/job/tractor-loan-sandbo=
+x1-deploy/" class=3D"external-link" rel=3D"nofollow">SB1</a></p></td>
+<td data-local-id=3D"505eaf0c429f" class=3D"confluenceTd">
+<p local-id=3D"dab70d5876a3"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/uat/job/tractor-loan-uat-deploy/" class=3D"exte=
+rnal-link" rel=3D"nofollow">UAT</a></p></td>
+<td data-local-id=3D"898d8a1f9924" class=3D"confluenceTd">
+<p local-id=3D"674643befe0c"><a href=3D"https://jenkinsc.axisb.com/jenkins/=
+job/Maximus_916_NonProd/job/prod/job/tractor-loan-prod-deploy/" class=3D"ex=
+ternal-link" rel=3D"nofollow">Prod</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<div id=3D"expander-1326473314" class=3D"expand-container">
+<div id=3D"expander-control-1326473314" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"bbee99527e1e91daeaa0d170e59049ea838de6=
+98e94900f7ca4b57352192f1e4" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">Recommended release note minimum fields</span>
+</div>
+<div id=3D"expander-content-1326473314" class=3D"expand-content">
+<ul local-id=3D"a068a31abed7">
+<li local-id=3D"202e696dce2b">
+<p local-id=3D"293135b5bf47">Release tag and release type</p></li>
+<li local-id=3D"14a5fc1f105f">
+<p local-id=3D"637db40b7897">In-scope products and shared services</p></li>
+<li local-id=3D"b8283ae84c50">
+<p local-id=3D"296b86b3ba2e">Repository and version mapping</p></li>
+<li local-id=3D"3474d35fe090">
+<p local-id=3D"a3d9158f775e">Environment promotion history</p></li>
+<li local-id=3D"46c7524655cc">
+<p local-id=3D"0700dbdb65d5">Smoke, regression, and backward compatibility =
+evidence links</p></li>
+<li local-id=3D"9931b9b6ac90">
+<p local-id=3D"5985f7e0692c">Approvals and sign-off status</p></li>
+<li local-id=3D"0101589b2044">
+<p local-id=3D"525bd1cbab58">Known issues and accepted risks</p></li>
+<li local-id=3D"42ec550a56be">
+<p local-id=3D"9a8eb82dc7e2">Rollback owner and rollback method</p></li>
+<li local-id=3D"a22b4da04bd1">
+<p local-id=3D"b50736709a6a">Final go/no-go decision and closure summary</p=
+></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_250_1772521480.1788804359298
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/f026168eabd29c0de1c73027e67487ba192b1ae56f354d36cbc6289a5f07c7e1
+
+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
+9OnTDMPADTfcwDiO3C8zuV9mAtBa46qr/gMBEJKYponNzU3+9E//lF//9V/n9OnT2Oaq/1i2yUwA
+WmtcddV/MQCqbQAk8UVf9EXUWvmrv/orbPOCRASlFCTx300SpRT+s0QEpRSuuur/AACqJFprnDhx
+gt///d/nd37nd3i1V3s1IoLnRxK33347BwcHZCb/EwzDwH+GiODee+/FNpnJ/wS2WS6XXHXVvwEA
+dTab8eu//ut8zdd8Da/+6q/OYrHg7d7u7Xjyk5/M83PTTTexs7PD/yS22dzc5D/asWPHeOmXfmky
+k/8pbPPQhz6Uq676NwCgTtPEIx/5SF7/9V+fO++8k7vuuosnPOEJ9H3P81NK4cSJE/x/IIljx45x
+1VX/RwBQp2niwQ9+MJ/wCZ/A2bNn+bM/+zPuuusuHvzgB3PVVVf9nwJAlURrjdYax48f503e5E2Q
+xN/+7d9y1VVX/Z8CQOUBMpNhGCilcNVVV/2fA0Dlqquu+v8CgMpVV131/wUAlauuuur/CwAqV111
+1f8XAFSuuuqq/y8AqFx11VX/XwBQueqqq/6/AKBK0HUV29yvlEIUcdVVV/2fAph68cKSx/3DbUg8
+S0Rw+zMu0JW7mM1m2Oaqq/49uq7j9tvvY3PjkFl/jGma+P8gFFzcvchdd53jGbfeyziO/HcppXDH
+7eepB3uVC3WFJO4nicP9wvb2FrNZj22uuurfo+s6NjcWbG4u2N7eZJom/j+ICMa2ZmMxZ3t7k3Ec
++e9SSqHvtqnzec/pMyd4IEkcLZdcc+1xZrOeq676j3Dy1DZbW1ucOr3N/ye1S46f2OLkqS3+m3Hi
+5DbVmGwJ4lkkYRsQV1111f8ZAFSuuuqq/y8AqFx11VX/XwBQueqqq/6/AKBy1VVX/X8BQOWqq676
+/wKAylVXXfX/BQCVq6666v8LACpXXXXV/xcAVK666qr/LwCoXHXVf4GzZ89y8eJFMpPDw0M2Nze5
+6r8cAJWrrvovcOnSJT7kQz6EG264gZ/8yZ9kc3OTq/7LAVC56qr/Ag9/+MN5/dd/Pa6//npOnTrF
+Vf8tAKhcddULMY4Tv/Xrf01E8O9RSuE1X/1t6LqO3/y1vyYz+beyTa3Ba7/eSyOJ/yx/9idP4ML5
+A0oJ/q0ksVotue/sEb/5a39NZvLvMQwjr/rqL8bxE1v8GwBQueqqF2IcJoYhufmW68hM/j1OnT6N
+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
+gg==
+------=_Part_250_1772521480.1788804359298
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/bbee99527e1e91daeaa0d170e59049ea838de698e94900f7ca4b57352192f1e4
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
+//9wcHBwcHBwcHBwcHBwcHBwcHA3RenHAAAAB3RSTlMAZoiZzN3/SzZomQAAAAlwSFlzAAALEgAA
+CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
+ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
+GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
+------=_Part_250_1772521480.1788804359298--

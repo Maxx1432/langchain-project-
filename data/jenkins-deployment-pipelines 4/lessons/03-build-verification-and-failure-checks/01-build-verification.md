@@ -1,0 +1,648 @@
+# Build Verification
+
+## Overview
+
+Build verification is the process of confirming that the expected code was built and that the expected image is being used by the service.
+
+A build can be verified using:
+
+1. The **Git commit**
+2. The **Jenkins build number**
+3. The **container image**
+4. The **Kibana logs**
+
+The basic relationship is:
+
+**Git Commit → Jenkins Build → Image → Running Service**
+
+For a new joiner, the main idea is:
+
+> **We verify that the code we expect to run is the code that was actually built and deployed.**
+
+---
+
+# 1. Why Do We Verify a Build?
+
+A successful Jenkins build does not by itself tell us everything about what is currently running in an environment.
+
+Build verification helps answer:
+
+> **"Is the expected version of the service actually being used?"**
+
+For example, suppose the expected build is:
+
+`Home-loan-ui:build-3340-ad9cb`
+
+We can verify that:
+
+* Jenkins built the expected commit.
+* The build number is `3340`.
+* The image contains the expected commit identifier `ad9cb`.
+* The deployed service is using the expected image.
+
+---
+
+# 2. What Information Identifies a Build?
+
+A build can be identified using three important pieces of information:
+
+### Service Name
+
+Identifies which service the build belongs to.
+
+Example:
+
+`Home-loan-ui`
+
+### Build Number
+
+Identifies the Jenkins build.
+
+Example:
+
+`3340`
+
+### First 5 Characters of the Commit
+
+Identifies the Git commit associated with the build.
+
+Example:
+
+`ad9cb`
+
+Together they can appear in the image/build format:
+
+`Home-loan-ui:build-3340-ad9cb`
+
+---
+
+# 3. What is the Build Image Format?
+
+The documented build image format is:
+
+`service-name:build-buildNo.-first-5-values-of-the-commit`
+
+Example:
+
+`Home-loan-ui:build-3340-ad9cb`
+
+Break this example into parts:
+
+**Home-loan-ui**
+
+→ Service name
+
+**build-3340**
+
+→ Jenkins build number `3340`
+
+**ad9cb**
+
+→ First 5 characters of the Git commit
+
+Therefore:
+
+`Home-loan-ui:build-3340-ad9cb`
+
+means that the image belongs to the Home-loan-ui service, was created from Jenkins build `3340`, and is associated with the commit whose first 5 characters are `ad9cb`.
+
+---
+
+# 4. How Do I Confirm a Build Using the Last Commit?
+
+A build can be verified by comparing the latest commit on the relevant Git branch with the commit information shown in Jenkins.
+
+For example, if the latest commit on the `master` branch starts with:
+
+`ad9cb`
+
+then the Jenkins build should contain the same first 5 characters:
+
+`ad9cb`
+
+### Verification Process
+
+1. Check the latest commit on the required branch.
+2. Note the first 5 characters of the commit.
+3. Open the corresponding Jenkins build.
+4. Open **Console Output**.
+5. Search for the commit information.
+6. Compare the first 5 characters with the expected commit.
+
+### Example
+
+Expected latest commit:
+
+`ad9cb...`
+
+Jenkins build/image:
+
+`Home-loan-ui:build-3340-ad9cb`
+
+The commit identifier matches, so the build corresponds to the expected commit.
+
+---
+
+# 5. What Does the First 5 Characters of the Commit Mean?
+
+A Git commit has a longer commit identifier.
+
+For build verification, the first 5 characters of the commit are used as a short identifier.
+
+For example, if the complete commit is:
+
+`ad9cb123456789...`
+
+the short identifier used in the build image is:
+
+`ad9cb`
+
+This short value helps connect the Jenkins build and image back to the Git commit.
+
+---
+
+# 6. What is the Difference Between a Git Commit and a Jenkins Build Number?
+
+They identify different things.
+
+### Git Commit
+
+Identifies a specific version of the source code.
+
+Example:
+
+`ad9cb...`
+
+### Jenkins Build Number
+
+Identifies a particular execution of the Jenkins job.
+
+Example:
+
+`3340`
+
+So:
+
+**Git commit → Which code?**
+
+**Jenkins build number → Which Jenkins build?**
+
+The image combines both pieces of information:
+
+`Home-loan-ui:build-3340-ad9cb`
+
+---
+
+# 7. How Can I Verify the Image?
+
+The expected image follows this format:
+
+`service-name:build-buildNo.-first-5-values-of-the-commit`
+
+For example:
+
+`Home-loan-ui:build-3340-ad9cb`
+
+To verify the image, compare:
+
+* Service name
+* Jenkins build number
+* First 5 characters of the commit
+
+with the expected values.
+
+If all three match, the image corresponds to the expected build and commit.
+
+---
+
+# 8. Why Do We Verify the Image?
+
+The Jenkins build tells us what Jenkins built.
+
+The image tells us which build/commit is packaged into the image that can be used by the service.
+
+Therefore, checking the image helps connect the build process to the deployed application.
+
+The simplified relationship is:
+
+**Git**
+
+`ad9cb...`
+
+↓
+
+**Jenkins**
+
+`Build #3340`
+
+↓
+
+**Image**
+
+`Home-loan-ui:build-3340-ad9cb`
+
+↓
+
+**Service**
+
+Running the expected image
+
+---
+
+# 9. What is Kibana Verification?
+
+The build can also be verified using the latest Kibana logs for the service.
+
+Kibana can be used to find the logs generated by the running service.
+
+The purpose of this verification is to check which **container image** is being used by the service.
+
+---
+
+# 10. How Do I Find My Service in Kibana?
+
+Before checking the image, first filter Kibana using the service's Kubernetes container name.
+
+Use:
+
+`kubernetes.container_name:your-service-name`
+
+For example:
+
+`kubernetes.container_name:home-loan-ui`
+
+This filter limits the logs to the selected service.
+
+### Step-by-Step
+
+1. Open Kibana.
+
+2. Apply the filter:
+
+   `kubernetes.container_name:home-loan-ui`
+
+3. Look at the latest logs for the service.
+
+4. Find the field:
+
+   `Kubernetes.container_image`
+
+5. Check the image value.
+
+6. Compare the image with the expected build.
+
+---
+
+# 11. What is `kubernetes.container_name`?
+
+`kubernetes.container_name` is the field used in Kibana to identify the Kubernetes container/service whose logs you want to view.
+
+For example:
+
+`kubernetes.container_name:home-loan-ui`
+
+means:
+
+> Show logs for the `home-loan-ui` container.
+
+For a different service, replace `home-loan-ui` with the appropriate container name.
+
+Example:
+
+`kubernetes.container_name:your-service-name`
+
+---
+
+# 12. What is `Kubernetes.container_image`?
+
+`Kubernetes.container_image` contains the container image associated with the running container.
+
+This field can be checked to identify which image the service is using.
+
+For example:
+
+`home-loan-ui:SIT-build-3340-ad9cb`
+
+The image can then be compared with the expected build information.
+
+---
+
+# 13. What Image Should I Look for in Kibana?
+
+The documented Kibana image format contains:
+
+`servicename:Env-buildNo.-first-5-values-of-the-commit`
+
+Example:
+
+`home-loan-ui:SIT-build-3340-ad9cb`
+
+Break it down as:
+
+**home-loan-ui**
+
+→ Service name
+
+**SIT**
+
+→ Environment
+
+**build-3340**
+
+→ Build number
+
+**ad9cb**
+
+→ First 5 characters of the commit
+
+---
+
+# 14. How Do I Verify a Build Using Kibana?
+
+Follow these steps:
+
+### Step 1 — Filter by Container Name
+
+Apply:
+
+`kubernetes.container_name:your-service-name`
+
+Example:
+
+`kubernetes.container_name:home-loan-ui`
+
+### Step 2 — Check the Latest Logs
+
+After applying the filter, look at the latest logs for that service.
+
+### Step 3 — Find the Container Image
+
+Check:
+
+`Kubernetes.container_image`
+
+### Step 4 — Compare the Image
+
+Compare the image with the expected build.
+
+For example:
+
+Expected:
+
+`home-loan-ui:SIT-build-3340-ad9cb`
+
+Kibana:
+
+`home-loan-ui:SIT-build-3340-ad9cb`
+
+The values match.
+
+Therefore, the expected image is being used.
+
+---
+
+# 15. Why Do We Filter Kibana by Container Name First?
+
+Kibana contains logs from multiple services.
+
+If you search without identifying the service, you may see logs belonging to many different containers.
+
+The filter:
+
+`kubernetes.container_name:home-loan-ui`
+
+helps narrow the logs to the required service.
+
+Therefore, the recommended order is:
+
+**Select the service → Check latest logs → Check container image**
+
+---
+
+# 16. How Do I Verify That the Expected Code is Running?
+
+Use the following chain:
+
+### Step 1 — Check the Git Commit
+
+Find the latest commit on the required branch.
+
+Example:
+
+`ad9cb...`
+
+### Step 2 — Check Jenkins
+
+Open the Jenkins build and verify the commit information.
+
+Expected:
+
+`ad9cb`
+
+### Step 3 — Check the Build Number
+
+Identify the Jenkins build number.
+
+Example:
+
+`3340`
+
+### Step 4 — Check the Image
+
+Expected image:
+
+`Home-loan-ui:build-3340-ad9cb`
+
+### Step 5 — Check Kibana
+
+Filter:
+
+`kubernetes.container_name:home-loan-ui`
+
+Then check:
+
+`Kubernetes.container_image`
+
+Example:
+
+`home-loan-ui:SIT-build-3340-ad9cb`
+
+This allows the build information to be traced from the source commit through Jenkins to the container image used by the service.
+
+---
+
+# 17. What is the Difference Between Build Verification and Kibana Verification?
+
+### Build Verification
+
+Checks the relationship between:
+
+**Git Commit → Jenkins Build → Image**
+
+It helps confirm that the expected source code was built.
+
+### Kibana Verification
+
+Checks the relationship between:
+
+**Running Service → Container Image**
+
+It helps verify which image is associated with the running service.
+
+Together they provide stronger verification.
+
+---
+
+# 18. Common New Joiner Questions
+
+## "How do I check whether Jenkins built my latest code?"
+
+Check the latest commit on the relevant branch and compare its first 5 characters with the commit information in the Jenkins build's Console Output.
+
+---
+
+## "What does `ad9cb` mean in `Home-loan-ui:build-3340-ad9cb`?"
+
+`ad9cb` represents the first 5 characters of the Git commit associated with the build.
+
+---
+
+## "What does `3340` mean in `Home-loan-ui:build-3340-ad9cb`?"
+
+`3340` is the Jenkins build number.
+
+---
+
+## "What does `Home-loan-ui` mean?"
+
+It is the service name.
+
+---
+
+## "How do I check which image my service is using?"
+
+Open Kibana, filter by the service's container name using:
+
+`kubernetes.container_name:your-service-name`
+
+Then check the:
+
+`Kubernetes.container_image`
+
+field.
+
+---
+
+## "Why do I need to filter by `kubernetes.container_name`?"
+
+Because Kibana contains logs from multiple services.
+
+The container-name filter helps you see the logs belonging to the service you want to verify.
+
+---
+
+## "What should I check in Kibana?"
+
+After filtering for the service, check the latest logs and look at:
+
+`Kubernetes.container_image`
+
+Compare the image value with the expected service, environment, build number, and commit identifier.
+
+---
+
+## "What should I do if the Kibana image does not match my Jenkins build?"
+
+First compare the values carefully:
+
+* Service name
+* Environment
+* Jenkins build number
+* First 5 characters of the commit
+
+If they do not match, do not assume that the deployment is using the expected build. Further investigation may be required to understand which image is actually running.
+
+---
+
+## "What is the easiest way to remember build verification?"
+
+Remember this:
+
+**Commit → Build → Image → Running Service**
+
+* **Commit** tells you what code you expect.
+* **Build** tells you what Jenkins built.
+* **Image** packages that build.
+* **Running Service** uses the image.
+
+---
+
+# 19. Quick Reference
+
+| What do I want to verify?    | Where do I check?                              |
+| ---------------------------- | ---------------------------------------------- |
+| Latest code/commit           | Git/Bitbucket                                  |
+| Commit used by Jenkins       | Jenkins Console Output / Git build information |
+| Jenkins build number         | Jenkins Build Number                           |
+| Build-to-commit relationship | Jenkins + commit identifier                    |
+| Image created for the build  | Build image                                    |
+| Running service logs         | Kibana                                         |
+| Service/container in Kibana  | `kubernetes.container_name`                    |
+| Image used by the container  | `Kubernetes.container_image`                   |
+
+---
+
+# 20. Beginner Mental Model
+
+A new joiner should understand build verification as:
+
+**"I know which code I expect."**
+
+↓
+
+**"I verify Jenkins built that code."**
+
+↓
+
+**"I verify the image contains that build and commit."**
+
+↓
+
+**"I check Kibana to see which image the service is using."**
+
+Therefore:
+
+> **Build verification is about tracing the expected code from Git to Jenkins to the container image and finally verifying the image associated with the running service.**
+
+---
+
+# 21. Important Rules for Answering Build Verification Questions
+
+When answering questions about build verification:
+
+1. Explain the concept in simple language before using technical terminology.
+
+2. Explain what each part of an image name means.
+
+3. Do not assume the new joiner knows what a Git commit, Jenkins build number, container, or image is.
+
+4. When explaining Kibana verification, always explain that the container-name filter is used first.
+
+5. Use this Kibana filter format:
+
+   `kubernetes.container_name:your-service-name`
+
+6. After filtering, instruct the user to check the latest logs and the `Kubernetes.container_image` field.
+
+7. Distinguish between:
+
+    * Git commit
+    * Jenkins build number
+    * Container image
+    * Running service
+
+8. Do not claim that a matching image proves more than the documented process supports.
+
+9. Do not invent service names, environment names, image names, Jenkins URLs, Kibana URLs, or commands that are not present in the available documentation.
+
+10. When a user asks a troubleshooting question, provide the exact sequence of checks they should perform rather than only defining the relevant terms.
