@@ -605,3 +605,99 @@ tags:
     - UAT and PROD both use development branch only
     - PROD deployment does not involve any merge process
   - **Explanation**: The notes describe UAT SIT context and PROD master-branch deployment after DB team merge.
+
+## 08. Release Process
+
+- **Summary**: Standard Maximus master release process covering scope, principles, ownership, flow, mandatory gates, evidence, rollback, deployment controls, and environment references.
+- **Context**:
+  - lessons/08-release-process-context-for-rag/01-release-process-context-for-rag.md
+- **Knowledge Check**:
+  - **Question**: Which release path is defined for a Maximus Master Release?
+  - **Type**: multiple_choice
+  - **Options**:
+    - SIT1 -> QA1 -> Sandbox1 -> UAT -> Pre-Prod -> Prod
+    - SIT -> QA -> PERF -> UAT -> Production
+    - [x] SIT -> QA -> Sandbox -> UAT -> Pre-Prod -> Prod
+    - SIT -> Sandbox -> QA -> UAT -> Prod
+  - **Explanation**: The master release path is documented as SIT -> QA -> Sandbox -> UAT -> Pre-Prod -> Prod.
+- **Knowledge Check**:
+  - **Question**: What is the tag format for a Maximus Master Release?
+  - **Type**: multiple_choice
+  - **Options**:
+    - x.1.0
+    - x.0.1
+    - [x] x.0.0
+    - 76.1.0
+  - **Explanation**: The release tag governance table defines Maximus Master Release tag format as x.0.0.
+- **Knowledge Check**:
+  - **Question**: Which mandatory approval is specifically described as multi-level from L2-L5?
+  - **Type**: multiple_choice
+  - **Options**:
+    - IT approval
+    - [x] AOPM multi-level approval from L2-L5, as applicable
+    - Product Owner sign-off
+    - Security or InfoSec approval
+  - **Explanation**: Mandatory approvals include AOPM multi-level approval from L2-L5 as applicable.
+- **Knowledge Check**:
+  - **Question**: During Step 2 (SIT Cut and Quality Gates), which activity is required?
+  - **Type**: multiple_choice
+  - **Options**:
+    - Complete the Product Owner sanity window with a target of 3 days
+    - [x] Run the QA cycle with a 9-day cap
+    - Deploy in the approved release window
+    - Publish the closure note and known issues
+  - **Explanation**: Step 2 requires running the QA cycle with a 9-day cap along with backward compatibility checks.
+- **Knowledge Check**:
+  - **Question**: What is the Stage Timeline target outcome for Day 5?
+  - **Type**: multiple_choice
+  - **Options**:
+    - UAT validation completed
+    - Go/no-go prepared
+    - [x] Promotion candidate stabilized at Sandbox promotion target
+    - Production closure communication issued
+  - **Explanation**: Day 5 is the Sandbox promotion target with outcome of a stabilized promotion candidate.
+- **Knowledge Check**:
+  - **Question**: Under the Hard Stop Rule, which missing evidence is explicitly listed as a blocker for production go-live?
+  - **Type**: multiple_choice
+  - **Options**:
+    - QA sign-off from QA Head or delegate
+    - [x] Regression evidence
+    - AOPM multi-level approval from L2-L5, as applicable
+    - Product Owner sign-off
+  - **Explanation**: Missing regression evidence is listed as a production go-live blocking condition.
+- **Knowledge Check**:
+  - **Question**: Which mandatory release evidence item directly identifies who is responsible for rollback?
+  - **Type**: multiple_choice
+  - **Options**:
+    - Service version deployed
+    - [x] Rollback owner
+    - Regression test report links
+    - UAT sign-off
+  - **Explanation**: Mandatory release evidence includes rollback owner for each in-scope product.
+- **Knowledge Check**:
+  - **Question**: What is the referenced dashboard name in the Vulnerability Dashboard Process?
+  - **Type**: multiple_choice
+  - **Options**:
+    - Maximus Jenkins
+    - [x] Spring Boot Upgrade Dashboard
+    - Group by Service Name
+    - Non-Prod Environment Vulnerability Dashboard
+  - **Explanation**: The documented dashboard name is Spring Boot Upgrade Dashboard.
+- **Knowledge Check**:
+  - **Question**: Before SIT cut or QA freeze, where are smoke tests checked in Jenkins?
+  - **Type**: multiple_choice
+  - **Options**:
+    - SIT / SIT1
+    - QA / QA1
+    - [x] Maximus_916_NonProd -> sit -> Master Deploy / Master Release Smoke
+    - Sandbox / SB1
+  - **Explanation**: The documented navigation path is Maximus_916_NonProd -> sit -> Master Deploy / Master Release Smoke.
+- **Knowledge Check**:
+  - **Question**: Which recommended release note field captures the final release decision?
+  - **Type**: multiple_choice
+  - **Options**:
+    - Smoke evidence links
+    - [x] Final go/no-go decision
+    - Rollback method
+    - Closure summary
+  - **Explanation**: Recommended release notes include final go/no-go decision among minimum required fields.
